@@ -4,7 +4,7 @@ SET(SLT_LOG_PRIVATE
 )
 
 SET(SLT_LOG_PUBLIC
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/log/log.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/log/log.h
 )
 
 

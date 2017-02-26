@@ -3,7 +3,7 @@ SET(SLT_CORE_PRIVATE
 )
 
 SET(SLT_CORE_PUBLIC
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/core/core.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/core/core.h
 )
 
 

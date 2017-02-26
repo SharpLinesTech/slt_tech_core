@@ -3,10 +3,10 @@ SET(SLT_CONCUR_PRIVATE
 )
 
 SET(SLT_CONCUR_PUBLIC
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/concur/blocking_queue.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/concur/event_queue.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/concur/details/blocking_queue_impl.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/concur/details/event_queue_impl.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/concur/blocking_queue.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/concur/event_queue.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/concur/details/blocking_queue_impl.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/concur/details/event_queue_impl.h
 )
 
 add_library(slt_concur OBJECT

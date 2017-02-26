@@ -4,9 +4,9 @@ SET(SLT_FILE_PRIVATE
 )
 
 SET(SLT_FILE_PUBLIC
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/file/read.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/file/write.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/file/details/read_impl.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/file/read.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/file/write.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/file/details/read_impl.h
 )
 
 

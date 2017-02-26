@@ -4,9 +4,9 @@ SET(SLT_SETTINGS_PRIVATE
 )
 
 SET(SLT_SETTINGS_PUBLIC
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/settings/settings.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/settings/details/setting_details.h
-  ${SLT_TECH_PUBLIC_INCLUDE}/slt/settings/details/setting_impl.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/settings/settings.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/settings/details/setting_details.h
+  ${SLT_TECH_PUBLIC_INCLUDE_DIR}/slt/settings/details/setting_impl.h
 )
 
 add_library(slt_settings OBJECT
