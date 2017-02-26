@@ -1,0 +1,1 @@
+slt_unit_test(angle_test math)

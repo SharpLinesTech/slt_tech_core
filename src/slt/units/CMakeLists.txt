@@ -1,0 +1,2 @@
+slt_unit_test(direction_test units)
+slt_unit_test(distance_test units)
