@@ -16,6 +16,8 @@ namespace slt {
 
 Core* Core::instance = nullptr;
 
+Core::Core() : Core(std::vector<StringView>()) {}
+
 Core::Core(int argc, const char* argv[]) : Core(argvToArgs(argc, argv)) {}
 
 Core::Core(std::vector<StringView> const& args) {

@@ -4,6 +4,8 @@ project(slt_tech_core)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+message( warning " default: " CMAKE_CXX_FLAGS_DEBUG)
+
 macro(SLT_CORE_BUILD_CONFIG)
   set(CMAKE_CONFIGURATION_TYPES Validate;Debug;Release CACHE TYPE INTERNAL FORCE)
 
@@ -18,13 +20,14 @@ macro(SLT_CORE_BUILD_CONFIG)
                  CMAKE_CXX_FLAGS 
                  CMAKE_CXX_FLAGS_DEBUG 
                  CMAKE_CXX_FLAGS_RELEASE
-                 CMAKE_CXX_FLAGS_VALIDATED
+                 CMAKE_CXX_FLAGS_VALIDATE
                  CMAKE_C_FLAGS 
                  CMAKE_C_FLAGS_DEBUG 
                  CMAKE_C_FLAGS_RELEASE
                  CMAKE_C_FLAGS_MINSIZEREL
                  CMAKE_C_FLAGS_VALIDATE)
-      string(REPLACE "/MD" "-MT" ${flag_var} "${${flag_var}}")
+      string(REPLACE "/MDd" "/MTd" ${flag_var} "${${flag_var}}")
+      string(REPLACE "/MD" "/MT" ${flag_var} "${${flag_var}}")
     endforeach()
 
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /wd4521")

@@ -9,6 +9,7 @@
 namespace slt {
 
 struct Core {
+  Core();
   Core(int argc, const char* argv[]);
   Core(std::vector<StringView> const&);
   ~Core();
