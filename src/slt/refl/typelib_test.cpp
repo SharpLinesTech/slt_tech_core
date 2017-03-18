@@ -58,3 +58,13 @@ TEST(TypeLib, Reflect) {
   EXPECT_EQ(&v, (int*)reflected.object.data());
   EXPECT_EQ(&c_v, (int*)reflected_const.object.data());
 }
+
+TEST(TypeLib, PointerType) {
+  slt::refl::TypeLib lib;
+
+  int v = 5;
+  int * v_p = &v;
+
+  auto type = lib.get<int*>();
+
+}

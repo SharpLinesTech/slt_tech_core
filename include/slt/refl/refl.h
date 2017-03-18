@@ -10,6 +10,7 @@
 #include "slt/refl/enum_type.h"
 #include "slt/refl/string_type.h"
 #include "slt/refl/struct_type.h"
+#include "slt/refl/ptr_type.h"
 #include "slt/refl/traits.h"
 #include "slt/refl/type.h"
 

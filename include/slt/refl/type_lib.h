@@ -18,7 +18,7 @@ class TypeLib {
   // Get the global TypeLib instance.
   static TypeLib& instance();
 
-  // The the reflection information for the given type.
+  // The reflection information for the given type.
   template <typename T>
   Type const* get() {
     using type_impl_t = typename refl::Traits<T>::type_impl_t;
